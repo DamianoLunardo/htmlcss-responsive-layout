@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* containers */
+  
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .medium-container {
+    width: 980px;
+  }
+  
+  /* container for footer and get started */
+  
+  .container-width500 {
+    max-width: 500px;
+    margin: auto;
+  }
+  /* setup color and variables */
+  
+  :root {
+    --color-violet: #9792e4;
+    --color-blue: #0084fd;
+    --color-blue-light: #b5ddff;
+  
+    /* use for gap  in column*/
+  
+    --normal-gap: 16px;
+    --large-gap: 32px;
+  }
+  
+  /* class flex and column */
+  
+  .col {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  
+  .col-3 {
+    flex-basis: calc(100% / 3 - var(--normal-gap));
+  }
+  
+  .col-1-2 {
+    flex-basis: calc(50% - var(--normal-gap));
+  }
+  
+  .col-2-3 {
+    flex-basis: calc(100% / 3 * 2 - var(--normal-gap));
+  }
+  
+  .col-1-2-large-gap {
+    flex-basis: calc(50% - var(--large-gap));
+  }
+  
+  .col-3-large-gap {
+    flex-basis: calc(100% / 3 - var(--large-gap));
+  }
+  
+  .col-1-4 {
+    flex-basis: calc(25% - var(--large-gap));
+  }
+  
+  .col-3-4 {
+    flex-basis: calc(75% - var(--large-gap));
+  }
+  
+  html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+  
+  p {
+    line-height: 27px;
+  }
+  
+  a {
+    color: unset;
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  /* Paddings */
+  
+  .padding-64 {
+    padding: 64px 16px;
+  }
+  
+  .padding-16 {
+    padding: 16px 16px;
+  }
+  
+  .padding-top-xxl {
+    padding-top: 64px;
+  }
+  
+  /* nav bar */
+  
+  nav {
+    background-color: var(--color-blue);
+    color: white;
+  }
+  
+  .bg-primary {
+    background-color: var(--color-violet);
+  }
+  
+  /* burger icon for responsive*/
+  
+  .hamburger-icon {
+    width: 48px;
+  }
+  
+  .hamburger-container {
+    text-align: right;
+  }
+  
+  /* button style*/
+  
+  .btn{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  .btn.btn-secondary {
+    background-color: var(--color-blue);
+    color: white;
+    font-weight: bold;
+    padding: 8px 40px;
+  }
+  
+  /* hamburger menu */
+  .non-visible-lg {
+    display: none;
+  }
+  
+  /* card get demo apllication  img*/
+  
+  .large-img {
+    width: 80%;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .card {
+    padding: 32px 16px;
+    height: 100%;
+  }
+  
+  .card h4 {
+    color: var(--color-blue);
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+  
+  .card h3 {
+    color: var(--color-blue);
+    font-size: 20px;
+  }
+  
+  .card p {
+    line-height: 24px;
+    margin: 16px 0;
+    color: #5f6e7b;
+  }
+  
+  .card-secondary-light {
+    background-color: var(--color-blue-light);
+  }
+  
+  .card-icon-container {
+    color: var(--color-blue);
+    margin-bottom: 16px;
+  }
+  
+  .card-icon {
+    height: 70px;
+  }
+  
+  .apple-container {
+    display: inline-block;
+  }
+  
+  .apple-logo {
+    height: 16px;
+  }
+  
+  .border-radius-normal {
+    border-radius: 15px;
+  }
+  
+  .border-radius-large {
+    border-radius: 50px;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .relative-bottom {
+    position: relative;
+    bottom: -35px;
+    overflow: hidden;
+  }
+  
+  /* strategic planning */
+  
+  .strategic-planning {
+    color: white;
+  }
+  
+  .strategic-planning h3 {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .strategic-planning .img-container {
+    margin-bottom: 80px;
+  }
+  
+  /* developement  card right */
+  
+  .app-developement {
+    background-color: #ffffff;
+    padding: 32px;
+  }
+  
+  .app-developement h3 {
+    padding: 1.32px 0;
+  }
+  
+  .app-developement h6 {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+  
+  .arrow-down {
+    width: 13px;
+  }
+  
+  .arrow-container {
+    padding: 13px;
+    width: 48px;
+    display: inline-block;
+    margin-top: 16px;
+  }
+  
+  /* testimonial */
+  
+  .testimonial-image {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .left-text {
+    text-align: left;
+  }
+  
+  .testimonial .card {
+    color: white;
+    margin-bottom: 24px;
+  }
+  
+  .testimonial .card p {
+    color: white;
+    line-height: 32px;
+  }
+  
+  .testimonial h6 {
+    color: #5f6e7b;
+    font-size: 20px;
+    margin: 16px auto;
+    font-weight: normal;
+  }
+  
+  .testimonial .card h5 {
+    font-size: 24px;
+  }
+  
+  .testimonial h2 {
+    color: var(--color-violet);
+    padding: 24px 0;
+    font-size: 40px;
+  }
+  
+  .testimonial p {
+    font-size: 17px;
+    margin-bottom: 24px;
+  }
+  
+  .quotes-icon {
+    width: 24px;
+  }
+  
+  .benefits {
+    color: var(--color-violet);
+  }
+  
+  .benefits .card {
+    background-color: white;
+    padding: 32px 16px;
+  }
+  
+  .benefits .card h1 {
+    font-size: 56px;
+    margin-bottom: 16px;
+  }
+  
+  .benefits .card h3 {
+    color: var(--color-violet);
+  }
+  
+  .btn.bg-primary {
+    color: white;
+    padding: 8px 32px;
+    background-color: var(--color-violet);
+  }
+  
+  .benefits h2 {
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 48px;
+  }
+  
+  .relative-img-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .quotes.absolute-quotes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--color-violet);
+    text-align: right;
+  }
+  
+  .quotes.absolute-quotes .quotes-icon {
+    width: 27%;
+  }
+  
+  /* about us */
+  
+  .about-us {
+    color: var(--color-violet);
+  }
+  
+  .about-us p {
+    color: black;
+    padding-right: 48px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+  
+  .about-us h1 {
+    padding: 32px 0;
+    font-size: 64px;
+  }
+  
+  .about-us h3 {
+    padding: 32px 0;
+    line-height: 40px;
+    font-size: 24px;
+  }
+  
+  .linkedin-icon {
+    width: 16px;
+    position: relative;
+    bottom: -3px;
+    margin-right: 0.48px;
+  }
+  
+  .linkedin-container {
+    display: inline-block;
+  }
+  
+  .about-us .btn.bg-primary {
+    padding-top: 4px;
+    font-size: 14px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .normal-gap {
+    gap: var(--normal-gap);
+  }
+  
+  .large-gap {
+    gap: var(--large-gap);
+  }
+  
+  .justify-content {
+    justify-content: space-between;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .align-bottom {
+    align-items: flex-end;
+  }
+  
+  
+  
+  .get-started h6 {
+    color: #5f6e7b;
+    font-size: 16px;
+    margin: 16px auto;
+    font-weight: normal;
+  }
+  
+  .get-started p {
+    color: rgb(229, 223, 238);
+    line-height: 32px;
+    padding: 32px 0;
+  }
+  
+  .get-started h2 {
+    color: white;
+    font-size: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .get-started h1 {
+    font-size: 80px;
+    color: #fdc15f;
+  }
+  
+  .get-started .copyright a {
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .get-started p.copyright {
+    font-size: 14px;
+  }
+  
+  .get-started .btn{
+    padding: 24px 48px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: var(--color-violet);
+  }
+  
+  footer {
+    background-color: #333333;
+  }
+  
+  footer .container-width500 p:first-child {
+    margin-bottom: 64px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    line-height: 1.32px;
+    color: rgb(229, 223, 238);
+  }
+  
+  footer a {
+    padding: 0;
+    text-decoration: underline;
+    color: var(--color-violet);
+  }
+  

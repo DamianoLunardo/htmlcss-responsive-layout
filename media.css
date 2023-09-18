@@ -1,0 +1,33 @@
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  /*burger */
+  .non-visible-lg {
+    display: block;
+  }
+
+  /* menu*/
+  .non-visible {
+    display: none;
+  }
+
+  .col-1-1-1 {
+    flex-basis: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+
+}
+
+  @media screen and (max-width: 576px) {
+    .col-1-1 {
+      flex-basis: 100%;
+    }
+}
+}
